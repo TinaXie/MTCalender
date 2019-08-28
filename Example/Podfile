@@ -1,0 +1,16 @@
+#use_frameworks!
+
+platform :ios, '8.0'
+
+target 'MTCalender_Example' do
+  pod 'MTCalender', :path => '../'
+
+  target 'MTCalender_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end
